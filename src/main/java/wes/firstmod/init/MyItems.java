@@ -1,6 +1,5 @@
 package wes.firstmod.init;
 
-
 import wes.firstmod.FirstMod;
 
 import net.minecraft.client.Minecraft;
@@ -34,7 +33,8 @@ public class MyItems
 	public static void init()
 	{
 		
-		cheese = new Item().setUnlocalizedName("cheese");
+		//cheese = new Item().setUnlocalizedName("cheese");
+		cheese = new FoodMaker("cheese", 2, 0.2f, false);
 		
 	}
 	
