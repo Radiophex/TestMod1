@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import wes.firstmod.init.MyBlocks;
 import wes.firstmod.init.MyItems;
 
 
@@ -28,9 +29,14 @@ public class FirstMod
 	{
 		
 		MyRecipes.addRecipes();
+		
 		MyItems.init();
 		MyItems.register();
 		MyItems.registerRenders();
+		
+		MyBlocks.init();
+		MyBlocks.register();
+		MyBlocks.registerRenders();
 		
 	}
 	    

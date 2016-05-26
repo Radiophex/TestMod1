@@ -25,7 +25,7 @@ public class MyItems
 	{
 		
 		Item cheeseName = cheese.setRegistryName("cheese");
-
+		cheese = new Item().setUnlocalizedName("cheese");
 		GameRegistry.register(cheeseName);
 		
 	}
@@ -38,10 +38,10 @@ public class MyItems
 		
 	}
 	
-	public static void registerRender(Item item, String objectName)
+	public static void registerRender(Item item, String itemName)
 	{
 		
-		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(FirstMod.MODID + ":" + objectName, "inventory"));
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(FirstMod.MODID + ":" + itemName, "inventory"));
 		
 	}
 	
