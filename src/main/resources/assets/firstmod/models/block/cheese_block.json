@@ -1,0 +1,10 @@
+{
+
+    "parent": "blocks/cube_all",
+    "textures": {
+    
+        "all": "firstmod:blocks/cheese_block"
+    
+    }
+
+}
